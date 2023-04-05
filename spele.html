@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Square Subtract Game</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h5 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SPĒLE</h1>
+    <button id="comp-start" style="display: none; margin: 10px">Spēli sāk DATORS</button>
+    <button id="user-start" style="display: none; margin: 10px">Spēli sāk CILVĒKS</button>
+    
+    <form style="display: none;">
+      <h5 id="move-descr"></h5>
+      <p>Spēles skaitlis: <span id="number">240</span></p>
+      <label for="move">Ievadi skaitļa kvadrātu:</label>
+      <input type="number" id="move" name="move" min="2" max="240" required>
+      <button type="submit">Atņemt</button>
+    </form>
+    <button id="play-again" style="display: none;">Jauna spēle</button>
+
+    <script src="game.js"></script>
+  </body>
+</html>
+
